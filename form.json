@@ -1,0 +1,24 @@
+{
+  "title": "Food Order",
+  "questions": [
+    {
+      "label": "What would you like to order?",
+      "type": "select",
+      "options": ["pizza", "burger"],
+      "next": {
+        "pizza": [
+          {
+            "label": "Would you like to add onion, cheese, and additional tomato?",
+            "type": "text"
+          }
+        ],
+        "burger": [
+          {
+            "label": "Do you want double cheese?",
+            "type": "text"
+          }
+        ]
+      }
+    }
+  ]
+}
